@@ -1,0 +1,230 @@
+* { margin: 0; padding: 0;}
+
+html,body { 
+	height: 100%;
+    }
+
+body { 
+	margin: 0;  
+	position: relative;
+    background: #f9f9f9;
+	font: 14px/1.5 Arial, Helvetica, sans-serif;
+	line-height: 18px; 
+	color: #a1a1a1;
+	}
+	
+a { 
+	text-decoration: underline; 
+	outline: none;
+	color: #4e4e4e;
+	}
+	
+a img {
+    border: none;
+	}
+	
+a:hover {
+    color: #000000;
+	}
+	
+:focus {
+    outline: none;
+    }
+ 	
+p { 
+    display: block; 
+	width: auto;
+	margin-bottom: 10px; 
+    text-align: justify; 
+	clear: both;
+    }
+	
+p:after {
+    content: '';
+    display: block;
+    clear: both;
+    }	   	
+	
+h1 { 
+	padding: 3px 0 17px 0;
+	font-size: 22px;
+	line-height: 24px;  
+	font-weight: normal;
+	}	
+	
+h2 { 
+	margin-bottom: 10px; 
+	font-size: 20px;
+	line-height: 22px;  
+	}
+	
+h3 {
+	margin-bottom: 5px; 
+	font-size: 18px;
+	line-height: 20px;
+	}
+	
+h4 { 
+	margin-bottom: 5px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	}
+ 
+
+	
+/*Прочее*//*******************************************************************************************************************************************************************/
+
+.left {
+    float: left;
+	}
+	
+.right {
+    float: right;
+	}
+	
+.system-mess {
+    font-weight: bold;
+	color: #793804;
+	}
+
+/*Попап окно*/
+
+#fade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000;
+	position: fixed; 
+	left: 0; 
+	top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 999;
+    }
+	
+.popup-block {
+	display: none; /*--hidden by default--*/
+	background: #fff;
+	padding: 0 15px 5px 15px; 
+	border: 1px solid #000000;
+	float: left;
+	position: fixed;
+	top: 50%; 
+	left: 50%;
+	z-index: 99999 !important;
+    -webkit-border-radius: 5px; /* красивости в виде скругленных углов */
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	behavior: url(css/PIE.htc); 
+    }
+	
+.popup-block .title {
+    font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	height: 40px;
+	margin: 0 0 15px 0; 
+	border-bottom: 1px solid #d6d6d6;
+    }
+	
+a.close {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: -25px -35px 0 0;
+	background: url(../img/close.png) no-repeat left bottom; 
+    }
+	
+a.close:hover {
+    background-position: left top;
+    }
+	
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+    }
+	
+*html .popup-block {
+	position: absolute;
+    }
+	
+/*Увеличение миниатюр*//*******************************************************************************************************************************************************************/
+
+.thumb {
+    }
+	
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+ 
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}							

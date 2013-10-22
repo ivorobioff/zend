@@ -1,0 +1,62 @@
+<div id="header">
+
+    <div class="header-in">
+  
+        <a id="logo" href="/" title="На главную страницу"><img src="<?=$this->basePath('img/logo.png')?>" alt="На главную" /></a>
+ 
+        <div class="slogan">
+	        You can find the best Royalty free music here
+        </div><!--/.slogan-->
+		
+	    <ul class="account">
+	        <li><a href="#?w=180" rel="popup-login" class="poplight" title="Login">Login</a></li>
+			<li><a href="#" title="Register">Register</a></li>
+			<!-- Появляется после авторизации = <li>You are login as Ivan, <a href="#" title="Logout">Logout</a></li> -->
+        </ul><!--/.account-->
+		
+		<div class="hidden">
+	        <a href="#" title="">Hidden</a> [2]
+        </div><!--/.hidden-->
+		
+	    <div class="favorites">
+	        <a href="#" title="">Favorites</a> [2]
+        </div><!--/.favorites-->
+
+    </div><!--/.header-in-->		
+ 
+</div><!--/#header-->
+
+	        <div id="popup-login" class="popup-block">
+				<div class="title">Login to site</div>
+				<form action="">
+				    <p class="system-mess">System messege!</p>
+				    <p><input type="text" value="E-mail" /></p>
+				    <p><input type="password" value="Password" /></p>
+				    <p><input type="submit" value="Log in" /></p>
+					<p><a href="#" title="">Forget password?</a></p>
+                </form>
+	        </div><!--/.popup-block-->
+
+<div id="search-line">
+	
+	<ul class="search-menu">
+	    <li><a class="current" href="#" title="">Music</a></li>
+		<li><a href="#" title="">FX Sounds</a></li>
+		<li><a href="#" title="">Logos & Idents</a></li>
+    </ul><!--/.search-menu-->
+	
+	<div class="search-field">
+	
+	    <form action="">
+            <input type="text" value="What are you looking for?" />
+            <input type="submit" value="Search" />
+        </form>
+		
+    </div><!--/.search-field-->
+	
+	<div class="results-found">
+	    <!-- <em><img src="../img/loading.gif" align="loading" /></em> -->
+		<span>10 123 results found</span>
+	</div><!--/.results-found-->
+ 
+</div><!--/#search-line-->

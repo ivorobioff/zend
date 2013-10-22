@@ -1,0 +1,1026 @@
+/*Шаблон*/
+
+#wrapper {
+    display: table;
+	width: 100%; /*Ширина шаблона*/
+	min-width: 980px;
+	height: 100%;
+	margin: 0 auto;
+    }
+
+.w1 {
+	width: 100%;
+	display: table-row;
+    }
+	
+/* Шапка */
+	
+#header {
+    position: fixed;
+	top: 0;
+    display: block; 
+    width: 100%;
+	background: #FFFFFF;
+	border-bottom: 10px solid #e3e3e3;
+	z-index: 999;
+    }
+	
+#header:after {
+	content: '';
+	display: block;
+	clear: both;
+    }
+	
+#header .header-in {
+    display: block;
+	width: 980px;
+	margin: 0 auto;
+	}
+	
+/* Логотип */
+	
+#logo {
+    float: left;
+	margin: 5px 0;
+	}
+	
+/* Слоган */
+	
+.slogan {
+    float: left;
+	margin: 5px 0 0 20px;
+	font-size: 13px;
+	line-height: 52px;
+	}
+	
+/* Люимое */
+	
+.favorites {
+    float: right;
+	padding: 0 0 0 22px;
+	line-height: 58px;
+	background: url(../img/favorites.png) no-repeat left center;
+	}
+	
+/* Скрытое */
+	
+.hidden {
+    float: right;
+	margin: 0 0 0 20px;
+	padding: 0 0 0 22px;
+	line-height: 58px;
+	background: url(../img/hidden.png) no-repeat left center;
+	}
+	 
+/* Авторизация */
+	
+.account  {
+    list-style: none; 
+    float: right;
+	margin: 0 0 0 20px;
+	padding: 0 0 0 22px;
+	line-height: 58px;
+	}
+	
+.account li  { 
+    float: left;
+	margin: 0 0 0 10px;
+	} 
+	
+#popup-login input[type="text"], #popup-login input[type="password"] {
+    width: 160px;
+    }
+	
+/* Область поиска */
+	
+#search-line {
+    display: block; 
+    width: 980px;
+	margin: 0 auto;
+	padding: 70px 0 0 0;
+    }
+	
+#search-line:after {
+	content: '';
+	display: block;
+	clear: both;
+    }
+	
+/* Меню поиска */
+	
+.search-menu {
+    list-style: none;
+    float: left;
+	margin: 15px 0 5px 40px;
+	padding: 0 0 0 0;
+    }
+   
+.search-menu li {
+    float: left;
+	margin: 0 10px 0 0;
+	padding: 0 0 0 0;
+	}
+	
+.search-menu li a {
+    color: #000000;
+	text-decoration: underline;
+	}
+	
+.search-menu li a:hover {
+    color: #666666;
+	}
+	
+.search-menu li a.current {
+    text-decoration: none;
+	}
+	
+/* Поле поиска */
+	
+.search-field {
+    display: block;
+	width: 920px;
+	height: 43px;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+	clear: both;
+	background: url(../img/search-field.png) no-repeat left top;
+    }
+	
+.search-field input[type="text"] {
+    float: left;
+	width: 805px;
+	margin: 5px 0 0 5px;
+	padding: 8px;
+	position: relative;
+	background: none !important;
+	border: none !important;
+    -webkit-box-shadow: none !important; /* красивости в виде тени */
+    -moz-box-shadow: none !important;
+    -khtml-box-shadow: none !important;
+    box-shadow: none !important;
+	text-shadow: none !important;
+	color: #a1a1a1 !important;  
+    }
+	
+.search-field input[type="text"]:hover, .search-field input[type="text"]:focus {
+    background: none !important;
+	border: none !important;
+    -webkit-box-shadow: none !important; /* красивости в виде тени */
+    -moz-box-shadow: none !important;
+    -khtml-box-shadow: none !important;
+    box-shadow: none !important;
+	text-shadow: none !important;
+	color: #4e4e4e !important; 
+    }
+		
+.search-field input[type="submit"] {
+    float: right;
+	margin: 6px 14px 0 0;
+	position: relative;
+	background: none !important;
+	border: none !important;
+    -webkit-box-shadow: none !important; /* красивости в виде тени */
+    -moz-box-shadow: none !important;
+    -khtml-box-shadow: none !important;
+    box-shadow: none !important;
+	text-shadow: none !important;
+	color: #FFFFFF !important; 
+	font-weight: bold;
+    }
+	
+.search-field input[type="submit"]:hover, .search-field input[type="submit"]:focus {
+	background: none !important;
+	border: none !important;
+    -webkit-box-shadow: none !important; /* красивости в виде тени */
+    -moz-box-shadow: none !important;
+    -khtml-box-shadow: none !important;
+    box-shadow: none !important;
+	text-shadow: none !important;
+	color: #000000 !important; 
+    }
+	
+/* Кол-во результатов поиска */
+	
+.results-found {
+    float: left;
+	margin: 5px 0 15px 40px;
+	padding: 0 0 0 0;
+	clear: both;
+	color: #999999;
+    }
+	
+.results-found em, .results-found span {
+    float: left;
+	margin: 0 5px 0 0; 
+    }	
+		
+/*  */
+		
+#main {
+    display: block;
+	width: 980px;
+	margin: 0 auto;
+    }
+	
+#main:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+ 
+/* Левая колонка */
+	
+#left {
+	width: 215px;
+	float: left;
+	margin: 0 15px 15px 0;
+	position: relative;
+    }
+	
+/* Ползунки */
+
+.slider {
+    clear: both;
+	}
+
+.ui-widget-content .slider {
+    background: #e3e3e3;
+    }
+
+.ui-widget-content .ui-state-default {
+    background: #a5a5a5;
+    border: 1px solid #a5a5a5;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Google Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    -o-border-radius: 15px; /* Opera */
+    -ms-border-radius: 15px; /* IE8 */
+    -icab-border-radius: 15px; /* Icab */
+    border-radius: 15px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	cursor: pointer !important;
+    }
+	
+/* Аккордион */
+
+#accordion {
+    display: block;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	background: #FFFFFF;
+	border: 1px solid #e3e3e3 !important;
+    }
+ 
+#accordion:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+	
+.ui-accordion { border: none !important; }
+.ui-accordion .ui-accordion-header {
+    display: block;
+	margin: 0 0 0 0; 
+    cursor: pointer; 
+	position: relative; 
+	zoom: 1; 
+	color: #4e4e4e; 
+	text-shadow: none !important; 
+	font-size: 15px; 
+	line-height: 32px; 
+	background: none; 
+	border-bottom: 5px solid #e3e3e3; 
+	border-top: none;
+	border-left: none !important;
+	border-right: none !important;
+	}
+	
+.ui-accordion .ui-accordion-header:hover { color: #000000; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { color: #a1a1a1;}
+.ui-accordion .ui-accordion-header { }
+.ui-accordion-icons .ui-accordion-header { padding-left: 2.2em !important; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { background: #FFFFFF; padding: 15px; border-bottom: 1px solid #e3e3e3;position: relative; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+a.clear {
+    float: right;
+	margin: 0 10px 0 0;
+	text-decoration: underline !important;
+	font-size: 12px;
+	font-weight: normal;
+	}
+	
+a.clear:hover {
+	text-decoration: none !important;
+	}
+
+#accordion h3 {
+    font-weight: normal;
+	position: relative;
+	padding-left: 30px !important;
+    }
+	
+#left #update {
+    display: none;
+	}
+ 
+#left:hover #update {
+    display: block;
+	width: 160px;
+	padding: 5px;
+	position: absolute !important;
+	top: 0;
+	left: -165px;
+	background: #FF6D00;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	text-align: center;
+	z-index: 99; 
+    }
+	
+#update i {
+    position: absolute;
+	right: -3px;
+	top: 50%;
+    float: right;
+	width: 3px;
+	height: 5px;
+	margin: -2px 0 0 0;
+	padding: 0;
+	background: url(../img/h3-span-em.png) no-repeat right top;
+    }
+	
+#update a {
+    font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+    }
+	
+#update a:hover {
+	color: #000000;
+	text-decoration: none;
+    }
+	
+#update p {
+    width: 160px;
+    font-size: 10px;
+	line-height: 12px;
+	margin: 0 0 0 0;
+	padding: 5px 0 0 0;
+	text-align: center;
+	color: #FFFFFF;
+    }
+	
+#accordion div div p { 
+	line-height: 32px;
+    }
+	
+#accordion div div strong { 
+	line-height: 24px;
+	clear: both;
+	font-weight: normal;
+	color: #666666;
+    }
+	
+#accordion div div p span {
+    float: left;  
+    }
+	
+#accordion div div p label {
+    float: left; 
+	line-height: 18px;
+	margin: 0 0 0 10px;
+	color: #666666;
+    }	
+
+#accordion div div p input[type="text"].left {
+	float: left;
+	width: 65px;
+    }
+	
+#accordion div div p input[type="text"].right {
+	float: right;
+	width: 65px;
+    }
+	
+/* Инструменты (кнопка) */
+
+a.select-instruments, a.select-category {
+    display: block;
+	width: auto;
+	overflow: hidden;
+	padding: 5px 24px 5px 7px !important;  
+	background: #FFFFFF; 
+	color: #a9a9a9;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	border: 1px solid #a9a9a9;
+	background: url(../img/plus.png) no-repeat 160px center;
+	text-decoration: none;
+	}
+
+a.select-instruments:hover, a.select-category:hover {
+	color: #000000;
+	border: 1px solid #000000;
+	}  
+	
+/* Инструменты (попап) */
+ 
+#popup-instruments .title a, #popup-category .title a {
+    font-size: 12px;
+	float: right;
+	margin: 0 15px;
+	line-height: 40px;
+	font-weight: normal;
+    }
+	
+#popup-instruments > ul, #popup-category > ul { 
+    float: left;
+	width: 310px; 
+    list-style: none; 
+	padding: 5px; 
+    }
+ 
+#popup-instruments > ul > li, #popup-category > ul > li { 
+    float: left;
+	width: 200px;
+	margin: 0 0 5px 0;
+	padding: 0 0 0 0; 
+    }
+	
+#popup-instruments > ul > li span, #popup-category > ul > li span {
+    float: left;
+	clear: none; 
+    }
+	
+#popup-instruments > ul > li label, #popup-category > ul > li label {
+    float: left;
+	width: 180px;
+	margin: 0 0 0 5px; 
+    }
+	
+#popup-instruments > ul > li:last-child, #popup-category > ul > li:last-child {
+	margin: 0 0 0 0;
+    }
+	
+#popup-instruments > ul > li > ul, #popup-category > ul > li > ul {
+    list-style: none;
+    float: left;
+	width: auto;
+	height: auto;
+	margin: 5px 0 5px 20px;
+	border: none;
+	padding: 0 0 0 0;
+    }
+	
+#popup-instruments > ul > li > ul li, #popup-category > ul > li > ul li {
+    list-style: none;
+    float: left;
+	margin: 0 0 5px 0;
+	padding: 0 0 0 0;
+	clear: both;
+    }
+	
+#popup-instruments > ul > li > ul li label, #popup-category > ul > li > ul li label {
+    width: 160px; 
+    }	
+	
+#popup-instruments > ul > li > ul li:last-child, #popup-category > ul > li > ul li:last-child {
+	margin: 0 0 0 0;
+    }
+	
+/* */
+	
+#accordion div div em {
+    font-size: 12px;
+    }
+ 	
+/* Контент */
+
+#content {
+    display: block;
+	overflow: hidden; 
+	width: auto;
+	margin: 0 0 15px 0;
+    }
+ 
+/* Сортировать по */
+
+.sort-by {
+    display: block;
+	width: 728px;
+    list-style: none;
+	margin: 0 0 15px 0;
+	padding: 5px 10px;
+	background: #FFFFFF;
+	border: 1px solid #e3e3e3;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+    }
+ 
+.sort-by:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+   
+.sort-by li {
+    float: left;
+	margin: 0 0 0 0;
+	padding: 0 10px 0 0;
+	line-height: 32px;
+	}
+	
+.sort-by li a {
+    color: #000000;
+	text-decoration: underline;
+	}
+	
+.sort-by li a:hover {
+    color: #666666;
+	}
+	
+.sort-by li a em {
+    display: none;
+    }
+	
+.sort-by li a.current {
+    text-decoration: none;
+	}
+	
+.sort-by li a.current em {
+    display: block;
+	float: right;
+	clear: none;
+	margin: 0 0 0 5px;
+	}
+	
+.sort-by .jq-selectbox__select {
+    width: 40px;
+	}	
+	
+/* Фильтровать по */
+
+.filtered-by {
+    float: left;
+	width: 600px;
+	height: 28px;
+	margin: 0 0 15px 0 !important;
+	padding: 2px 0 !important;
+	font-size: 12px; 
+	}
+	
+.filtered-by > span { 
+    float: left;
+	margin: 0 10px 0 0;
+	line-height: 28px; 
+	}
+	
+.filtered-by > form { 
+    float: left; 
+	}		
+/* Показать */
+
+.show {
+    list-style: none;
+    float: right;
+	width: 150px;
+	margin: 0 0 15px 0;
+	padding: 0 0 0 0;
+	font-size: 12px; 
+    }
+   
+.show li {
+    float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 10px;
+	line-height: 32px;
+	}
+	
+.show li a {
+    color: #000000;
+	text-decoration: underline; 
+	}
+	
+.show li a:hover {
+    color: #666666;
+	}
+	
+.show li a.current {
+    padding: 5px 10px;
+    text-decoration: none;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	background: #e4e4e4;
+	}
+	
+/* РЕЗУЛЬТАТЫ */
+
+#results {
+    list-style: none;
+    display: block; 
+    width: auto;
+	margin: 15px 0;
+    }
+	
+#results:after {
+	content: '';
+	display: block;
+	clear: both;
+    }
+   
+#results li {
+    float: left;
+	/*height: 98px;*/
+	margin: 0 0 0 0;
+	padding: 5px 0 0 0; 
+	position: relative;
+	border-top: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f9f9f9;
+	}
+	
+#results li:hover { 
+	border-top: 1px solid #FF6D00;
+	border-bottom: 1px solid #FF6D00;
+	}
+	
+#results li:active {
+    background: #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	}
+	
+#results li .fav-star {
+    float: left;
+	width: 60px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	}
+	
+#results li .fav-star a {
+    display: block;
+	width: 32px;
+	height: 32px;
+	margin: 33px auto 0 auto;
+	background: url(../img/fav-star.png) no-repeat left top;
+	}
+	
+#results li .fav-star a:hover {
+    background-position: left bottom;
+	}
+		
+#results li .thumb {
+    float: left;
+	width: 80px;
+	margin: 0 0 0 0;
+	padding: 10px 0 0 0;
+	}
+		
+#results li .thumb a img {
+    display: block;
+	width: 80px;
+	height: 80px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	}	
+	
+#results li .titles {
+    float: left;
+	width: 125px;
+	margin: 0 10px;
+	padding: 13px 0 0 0;
+	}	
+	
+#results li .titles h4 {
+    display: block;
+	width: auto;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 12px;
+	height: 28px;
+	margin: 1px 0 0 0;
+	padding: 0 0 2px 0;
+	font-weight: bold;
+	}
+	
+#results li .titles strong {
+    display: block;
+	width: auto;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 12px;
+	height: 24px;
+	margin: 0 0 0 0;
+	padding: 0 0 5px 0;
+	font-weight: normal;
+	}
+	
+#results li .titles span {
+    display: block;
+	width: auto;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 12px;
+	height: 24px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	}
+	
+#results li .titles h4 a, #results li .titles strong a , #results li .titles span a{
+    text-decoration: none;
+	}
+	
+#results li .titles h4 a:hover, #results li .titles strong a:hover , #results li .titles span a:hover {
+    text-decoration: underline;
+	}
+	
+#results li .titles span a {
+    color: #999999;
+	}	
+		
+#results li .descr {
+    float: left;
+	width: 230px;
+	margin: 6px 10px 0 0;
+	padding: 0 0 0 0;
+	}	
+#results li .descr span {
+    display: block;
+	width: auto;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 12px; 
+	margin: 0 0 3px 0;
+	padding: 0 0 0 0;
+	}	
+	
+#results li .player {
+    float: left;
+	width: 70px;
+	margin: 0 10px 0 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	}
+	
+.audiojsZ audio { position: absolute; left: 0; }
+.audiojsZ { width: 70px; height: 100px; background: none; overflow: hidden;}
+.audiojsZ .play-pauseZ { width: 50px; height: 50px; padding: 0; margin: 0px 10px 4px 10px; float: left;  }
+.audiojsZ span { display: none; width: 70px; height: 48px; margin: 0px; cursor: pointer; }
+.audiojsZ .playZ { display: block; }
+.audiojsZ .scrubberZ { position: relative; float: left; width: 68px; background: #e3e3e3; height: 20px; padding: 0; margin: 0; border: 1px solid #FFFFFF; overflow: hidden; text-align: center;}
+.audiojsZ .progressZ { position: absolute; top: 0px; left: 0px; height: 20px; width: 0px; background: #FF6D00; z-index: 1; }
+.audiojsZ .loadedZ { position: absolute; top: 0px; left: 0px; height: 20px; width: 0px; background: #FFFFFF; }
+.audiojsZ .timeZ { position: absolute; top: 0px; left: 20px; height: 20px; color: #793804; line-height: 20px; text-align: center; }
+.audiojsZ .timeZ em { font-style: normal; font-size: 12px;}
+.audiojsZ .timeZ strong { display: none;}
+.audiojsZ .error-messageZ { font-weight: bold;
+	color: #793804; }
+.audiojsZ .error-messageZ a { text-decoration: none; white-space: wrap; }
+
+.audiojsZ .playZ { background: url(../img/player/play.png) no-repeat left top; }
+.audiojsZ .playZ:hover { background-position: left bottom;}
+
+.audiojsZ .loadingZ { background: url('../img/player/player-graphics.gif') -2px -31px no-repeat; }
+.audiojsZ .errorZ { background: url('../img/player/player-graphics.gif') -2px -61px no-repeat; } 
+.playingZ .playZ, .playingZ .loadingZ, .playingZ .errorZ { display: none; }
+
+.playingZ .pauseZ { display: block; background: url(../img/player/pause.png) no-repeat left top; }
+.playingZ .pauseZ:hover { background-position: left bottom;}
+
+.loadingZ .playZ, .loadingZ .pauseZ, .loadingZ .errorZ { display: none; }
+.loadingZ .loadingZ { display: block; }
+.errorZ .timeZ, .errorZ .playZ, .errorZ .pauseZ, .errorZ .scrubberZ, .errorZ .loadingZ { display: none; }
+.errorZ .errorZ { display: block; }
+.errorZ .play-pauseZ p { cursor: auto; }
+.errorZ .error-messageZ { display: block; }	
+	
+#results li .price {
+    float: left;
+	width: 145px;
+	margin: 0 0 0 0;
+	padding: 13px 0 0 0;
+	text-align: center;
+	}	
+	
+#results li .price h3 {
+    font-size: 16px;
+	}	
+	
+#results li .price p {
+    margin: 0 0 5px 0;
+	font-size: 10px;
+	text-align: center !important; 
+	}	
+	
+#results li .price span.rs { 
+	padding: 0 18px 0 0;
+	background: url(../img/rs.png) no-repeat right center;
+	font-size: 12px;
+	}	
+	
+#results li a.hide {
+    display: none;
+	}	
+	
+#results li:hover a.hide {
+    display: block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: url(../img/hide.png) no-repeat left top;
+	}
+		
+#results li:hover a.hide:hover {
+    background-position: left bottom;
+	}
+	
+/* Загрузить еще */
+
+#load-more {
+    display: block; 
+    width: 200px;
+	overflow: hidden; 
+	margin: 0 auto;
+    }
+	
+#load-more a {
+    background: #e48523;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+	padding: 10px 20px;
+	text-decoration: none;
+    }
+	
+#load-more a:hover {
+    background: #FFFFFF;
+	color: #000000;
+    }
+	
+/*К ночалу*/
+
+#up {
+    position: fixed;
+    bottom: 105px;
+    right: 20px; 
+    }
+
+#up a { 
+    display: block;
+	width: 57px;
+	height: 57px;  
+    }
+		
+/* Футер */
+ 
+#footer {
+	width: 100%;
+	overflow: hidden; /*for FF on Windows 7*/
+	display: table-footer-group;
+	background: #e3e3e3;
+    }
+	
+#footer .footer-holder {
+	height: 1%;
+	display: table-row;
+    }
+	
+#footer .footer-frame { 
+    display:table-cell;
+	}
+	
+#footer .footer-frame .footer-in {
+    display: block;
+	width: 980px;
+	margin: 0 auto;
+	padding: 33px 0 52px;
+	font-size: 12px;
+	}
+	
+#follow-us {
+    float: left;
+	list-style: none;
+	}
+	
+#follow-us li {
+    float: left;
+	padding: 0 20px 0 0;
+	line-height: 20px;
+	}
+	
+#copyright {
+    float: left;
+	line-height: 20px;
+	}
+	
+#logo-footer {
+    float: right;
+	margin: -8px 0 0 10px;
+	line-height: 36px;
+    }
+ 
+a#autorlink {
+    float: right;
+	line-height: 20px;
+    color: #000000;
+	text-decoration: none; 
+    }
+ 
+a#autorlink span {
+    color: #666666;
+    font-weight: normal;
+    }
+	
+a#autorlink:hover, a#autorlink:hover span {
+    color: #333333;
+    }	
+	
+#autormess {
+    font-weight: bold;  
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+	background: #FF0000;
+	color: #FFFFFF;
+	}	
+	
+/* Второстепенные страницы */
+
+.h1-title {
+    display: block;
+	width: auto;
+	margin: 0 0 15px 0;
+	padding: 0 10px;
+	line-height: 40px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #e3e3e3;
+	position: relative;
+    /* красивости в виде скругленных углов */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    behavior: url(css/PIE.htc);
+    }

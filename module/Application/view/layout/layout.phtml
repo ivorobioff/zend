@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Soundizer</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<?=$this->render('layout/metalink.phtml');?>
+	 
+</head>
+
+<body <?php $pageName = "home"; ?> >
+<div id="test"></div>
+    <div id="wrapper">
+	
+        <div class="w1">
+		
+        <?=$this->render('layout/header.phtml')?>
+			
+            <div id="main">
+			
+            <?=$this->render('layout/left.phtml')?>
+					
+              <div id="content">
+				
+                    <ul class="sort-by">
+                        <li>Sort by:</li>
+                        <li><a class="current" href="#" title="">Relevant <em><img src="<?=$this->basePath('img/sort-top.png')?>" alt="" /></em></a></li>
+                        <li><a href="#" title="">Date</a></li>
+                        <li><a href="#" title="">Sales</a></li>
+                        <li><a href="#" title="">Rating</a></li>
+                        <li><a href="#" title="">Price</a></li>
+                        <li><a href="#" title="">Length</a></li>
+                        <li>
+                            <select>
+                                <option>BPM</option>
+                                <option>Опция</option>
+                            </select>
+                        </li>
+
+                    </ul><!--/.sort-by-->
+	
+                    <div class="filtered-by">
+                        <span>Filtered by:</span><form action=""><input id="filtered-by" type="text" class="tags" value="foo,bar,baz,roffle" /></form>
+                    </div><!--/.filtered-by-->
+	
+                    <ul class="show">
+                        <li>Show:</li>
+                        <li><a class="current" href="#" title="">All</a></li>
+                        <li><a href="#" title="">Favorites</a></li>
+                    </ul><!--/.show-->
+					
+					<?=$this->content?>
+				
+                </div><!--/#content-->
+			
+            </div><!--/#main-->
+			
+        </div><!--/.w1-->
+		
+    <?=$this->render('layout/footer.phtml');?>
+		
+    </div><!--/#wrapper-->
+ 
+</body>
+</html>

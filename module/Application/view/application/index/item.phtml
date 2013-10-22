@@ -1,0 +1,54 @@
+              <li>
+						
+                            <div class="fav-star">
+                                <a href="#" title="Add to favorite"></a>
+                            </div><!--/.fav-star-->
+			
+                            <div class="thumb">
+                                <a href="{{artist_icon}}" title="{{artist_name}}"><img src="{{artist_icon}}" alt="{{artist_name}}"/></a>
+                            </div><!--/.thumb-->
+			
+                            <div class="titles">
+                                <h4><a href="{{song_url}}" title="Song name">{{song_name}}</a></h4>
+                                <strong><a href="{{artist_url}}" title="Artist name">{{artist_name}}</a></strong>
+                                <span><a href="{{target_url}}" title="Target site">{{target_site}}</a></span>
+                            </div><!--/.titles-->
+			
+                            <div class="descr">
+                                <span>Music / {{category_name}}</span>
+                                <span>Bit Rate: {{bit_rate}}</span>
+                                <span>Length: {{duration}}</span>
+                                <span>BPM: {{bpm}}</span>
+                                <span>Looped Audio: {{looped_audio}}</span>
+                                <span>Sample Rate: {{sample_rate}}</span>
+                            </div><!--/.descr-->
+			
+                            <div class="player">
+                                <div class="audiojsZ">
+                                    <audio src="{{mp3}}"></audio>
+                                    <div class="play-pauseZ">
+                                        <span class="playZ"></span>
+                                        <span class="pauseZ"></span>
+                                        <span class="loadingZ"></span>
+                                        <span class="errorZ"></span>
+                                    </div><!--/.play-pauseZ-->
+                                    <div class="scrubberZ">
+                                        <div class="progressZ"></div>
+                                        <div class="loadedZ"></div>
+										<div class="timeZ">
+                                            <em class="playedZ">00:00</em><strong class="durationZ">00:00</strong>
+                                        </div><!--/.timeZ-->
+                                    </div><!--/.scrubberZ-->
+                                    <div class="error-messageZ"></div>
+                                </div><!--/.audiojsZ-->
+                            </div><!--/.player-->
+			
+                            <div class="price">
+                                <h3>{{price}}</h3>
+                                <p>{{sales}}</p>
+                                <span class="rs">Rating: {{rating}}</span>
+                            </div><!--/.price-->
+			
+                            <a href="#" class="hide" title="hide"></a><!--/.hide-->
+
+                        </li>

@@ -1,0 +1,34 @@
+<ul id="results">
+
+</ul><!--/#results-->
+
+<?php if($this->items_count > 20) {?>
+<div id="load-more">
+    <a href="#" title="Load more">View more results...</a>
+</div><!--/#load-more-->
+
+<script type="text/javascript">
+$(function(){
+	Views.ItemsLoader.getInstance();
+});
+</script>
+<?php } ?>
+
+<script type="text/javascript">
+$(function(){
+	Libs.HashListener.getInstance().onChange(function(url){
+		alert(url);
+	});
+	
+	Collections.Items.getInstance()
+		.addBunch(<?=$this->items?>)
+		.eachInBunch(function(model){
+			new Views.Item(model);
+		});
+});
+</script>
+
+<script type="text/template" id="one-item">
+<?=$this->render('application/index/item.phtml')?>
+</script>
+  

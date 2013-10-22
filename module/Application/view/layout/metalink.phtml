@@ -1,0 +1,81 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="no-cache" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<?=$this->headLink()
+	->appendStylesheet($this->basePath('css/reset.css'), 'all')
+	->appendStylesheet($this->basePath('css/style.css'), 'all')
+	->appendStylesheet($this->basePath('css/template.css'), 'all')
+	->appendStylesheet($this->basePath('css/media.css'), 'all')
+	->appendStylesheet($this->basePath('css/formstyler.css'), 'all')
+	->appendStylesheet($this->basePath('css/jquery-ui-1.8.16.custom.css'), 'all')
+	->appendStylesheet($this->basePath('css/jquery.tagsinput.css'), 'all')
+	->appendStylesheet($this->basePath('css/jquery.ui.1.8.16.ie.css'), 'screen', 'IE')
+	->appendStylesheet($this->basePath('css/lt7.css'), 'screen', 'IE 7')?>
+
+<?=$this->headScript()
+	->appendFile($this->basePath('js/jquery.min.js'))
+	->appendFile($this->basePath('js/html5shim.js'))
+	->appendFile($this->basePath('js/css3-mediaqueries.js'))
+	->appendFile($this->basePath('js/popup.js'))
+	->appendFile($this->basePath('js/forms/jquery.formstyler.js'))
+	->appendFile($this->basePath('js/forms/formstyler.js'))
+	->appendFile($this->basePath('js/forms/clearfields.js'))
+	->appendFile($this->basePath('js/jquery-ui-1.10.3.custom.min.js'))
+	->appendFile($this->basePath('js/jquery.tagsinput.js'))
+	->appendFile($this->basePath('js/thumb.js'))
+	->appendFile($this->basePath('js/player/audio.js'))
+	->appendFile($this->basePath('js/update.js'))
+	->appendFile($this->basePath('js/up.js'))
+	->appendFile($this->basePath('js/Class.js'))
+	->appendFile($this->basePath('js/Underscore.js'))
+	->appendFile($this->basePath('js/UnderscoreString.js'))
+	->appendFile($this->basePath('js/StdLib.js'))?>
+
+	<?=$this->jsComposer()?>
+
+<script type="text/javascript">
+function onAddTag(tag) {
+	alert("Add: " + tag);
+}
+function onRemoveTag(tag) {
+	alert("Delete: " + tag);
+}
+
+function onChangeTag(input,tag) {
+	alert("Change: " + tag);
+}
+
+
+$(function () {
+    // Accordion
+    $('input, select').styler();
+
+    // Аккордион
+    $("#accordion").accordion({
+        header: "h3",
+		collapsible: true,
+		heightStyle: "content"
+    });
+
+    // Ползунок
+    $('.slider').slider({
+        range: true,
+        values: [0, 100]
+    });
+
+    $('#filtered-by, #instruments, #category').tagsInput({width:'auto'});
+
+    $(".thumb a").lightBox();
+
+  //Floater
+	$('#update').containedStickyScroll({
+    	padTop: 80
+    });
+});
+
+</script>
